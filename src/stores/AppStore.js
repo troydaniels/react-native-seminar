@@ -7,6 +7,8 @@ class AppStore {
 
     @observable lives = 3;
 
+    @observable imageURL = 'https://picsum.photos/id/237/200/300';
+
     @action
     resetStore = _ => {
         this.score = 0
