@@ -1,17 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import { observer } from 'mobx-react';
+
+import { StyleSheet, Text, View, SafeAreaView} from 'react-native';
 import Header from './src/components/Header'
 
+@observer
 class App extends React.Component{
-  static navigationOptions = ({ navigation }) => {
-    const headerLeft = <Header/>;
-  };
-
   render(){
     return(
-    <View>
-      <Text>Open up App.js to start working on your app!</Text>
-    </View>
+    <SafeAreaView>
+        <Header/>
+    </SafeAreaView>
     )
   }
 }
