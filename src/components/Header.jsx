@@ -1,18 +1,19 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, TouchableOpacity } from 'react-native';
 import appStore from '../stores/AppStore';
-import {heartIcon} from 'react-native-vector-icons/AntDesign';
+import { observer } from 'mobx-react';
+import { Rating } from 'react-native-ratings';
+import HeaderStyle from '../styles/HeaderStyle';
 
-const Header = _ => {  
+
+const Header = observer(_ => {  
     const {score, lives} = appStore;
     return(
-        <View>
-            <Text>
-                Scores: {score}
-            </Text>
-            {/* <Heart/> */}
+        <View style={HeaderStyle.container}>
+            <Text>Score: {score}</Text>
+            <Rating type='heart' ratingCount={3} readonly startingValue={lives}/>
         </View>
     )
-};
+});
 
 export default Header;
