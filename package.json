@@ -10,6 +10,7 @@
   "dependencies": {
     "braces": "^3.0.2",
     "expo": "^35.0.0",
+    "mobx": "^5.13.0",
     "mem": "^5.1.1",
     "react": "16.8.3",
     "react-dom": "16.8.3",
