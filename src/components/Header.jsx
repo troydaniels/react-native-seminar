@@ -1,12 +1,12 @@
 import React from 'react';
-import { Text, View, TouchableOpacity } from 'react-native';
+import { Text, View } from 'react-native';
 import appStore from '../stores/AppStore';
 import { observer } from 'mobx-react';
 import { Rating } from 'react-native-ratings';
 import HeaderStyle from '../styles/HeaderStyle';
 
 
-const Header = observer(_ => {  
+const Header = observer(_ => {
     const {score, lives} = appStore;
     return(
         <View style={HeaderStyle.container}>
