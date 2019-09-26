@@ -2,10 +2,12 @@ import { StyleSheet } from 'react-native';
 
 const HeaderStyle = StyleSheet.create({
     container: {
-        height:'20%', width:'100%', 
+        height:'5%', 
+        width:'100%', 
         justifyContent:"space-around", 
         alignItems:"center", 
-        flexDirection:'row'
+        flexDirection:'row',
+        marginBottom:'3%'
     }
 });
 
