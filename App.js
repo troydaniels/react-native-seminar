@@ -5,6 +5,7 @@ import Header from './src/components/Header';
 import appStore from './src/stores/AppStore';
 import AppStyle from './src/styles/AppStyle';
 
+
 @observer
 class App extends React.Component{
   render(){
