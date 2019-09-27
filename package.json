@@ -26,8 +26,10 @@
     "react-native": "0.61.1",
     "react-native-ratings": "^6.5.0",
     "react-native-remote-svg": "^2.0.6",
+    "react-native-render-html": "^4.1.2",
     "react-native-svg": "^9.9.5",
     "react-native-svg-image": "^2.0.1",
+    "react-native-svg-uri": "^1.2.3",
     "react-native-vector-icons": "^6.6.0",
     "react-native-webview": "^7.2.7",
     "rn-fetch-blob": "^0.10.15"
