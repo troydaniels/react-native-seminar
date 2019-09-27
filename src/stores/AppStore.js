@@ -10,11 +10,20 @@ class AppStore {
 
   @observable question = undefined;
 
+  @observable result = undefined;
+
+  @observable gameOver = false;
+
   @action
   resetStore = () => {
     this.score = 0;
     this.lives = 0;
     this.question = undefined;
+  };
+
+  @action
+  resetResult = () => {
+    this.result = undefined;
   };
 
   @action
@@ -29,6 +38,8 @@ class AppStore {
 
   @action
   getNewQuestion = () => {
+    this.resetResult();
+
     axios
       .get("http://localhost:8080/get_question")
       .then(response => this.setQuestion(response.data))
@@ -54,12 +65,28 @@ class AppStore {
 
     axios
       .post("http://localhost:8080/verify_answer", postData)
-      .then(response => console.log(response.data))
+      .then(response => this.setResult(response.data.correct))
       .catch(error => {
         console.error(
           `There has been a problem with your fetch operation: ${error.message}`
         );
       });
+  };
+
+  @action
+  setResult = correct => {
+    if (correct) {
+      this.result = true;
+      this.incrementScore();
+    } else {
+      this.result = false;
+      this.decrementLives();
+    }
+  };
+
+  @action
+  setGameOver = _ => {
+    this.gameOver = true;
   };
 }
 
