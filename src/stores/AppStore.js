@@ -60,7 +60,7 @@ class AppStore {
     const { uri } = this.question;
     const postData = {
       uri,
-      selection: option
+      selection: `${option}.svg`
     };
 
     axios
