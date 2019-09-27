@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "DFA70E584B8C2C19B06D273D3ACC8E8B"
+               BlueprintIdentifier = "9A37FFD7FBB42452E8894AD686470E77"
                BuildableName = "libPods-logoguesser.a"
                BlueprintName = "Pods-logoguesser"
                ReferencedContainer = "container:Pods.xcodeproj">

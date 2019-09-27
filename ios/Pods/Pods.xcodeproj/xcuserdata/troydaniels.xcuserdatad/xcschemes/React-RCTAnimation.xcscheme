@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0B6EB5A5A204CA88742D913D70517372"
+               BlueprintIdentifier = "6EAFA19BAECD31235F1ECEFB790E3A15"
                BuildableName = "libReact-RCTAnimation.a"
                BlueprintName = "React-RCTAnimation"
                ReferencedContainer = "container:Pods.xcodeproj">

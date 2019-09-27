@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD967CEEB3DE10F4346C4DB9804B7748"
+               BlueprintIdentifier = "96754108B243141CB1082C5113F5D5DE"
                BuildableName = "libReact-RCTVibration.a"
                BlueprintName = "React-RCTVibration"
                ReferencedContainer = "container:Pods.xcodeproj">
