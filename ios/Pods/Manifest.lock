@@ -221,7 +221,7 @@ PODS:
     - ReactCommon/jscallinvoker (= 0.61.1)
   - rn-fetch-blob (0.10.16):
     - React-Core
-  - RNSVG (9.9.5):
+  - RNSVG (9.9.6):
     - React
   - RNVectorIcons (6.6.0):
     - React
@@ -353,7 +353,7 @@ SPEC CHECKSUMS:
   React-RCTVibration: 8be61459e3749d1fb02cf414edd05b3007622882
   ReactCommon: 4fba5be89efdf0b5720e0adb3d8d7edf6e532db0
   rn-fetch-blob: 651b8d076b43d0d7aa294a3d9ec16c00aab8bef9
-  RNSVG: f578799dd236be1ff32c55306df3e01711d428e5
+  RNSVG: 7364057921be1c8d234642bb2bd001a6c4a8f313
   RNVectorIcons: 0bb4def82230be1333ddaeee9fcba45f0b288ed4
   Yoga: d8c572ddec8d05b7dba08e4e5f1924004a177078
 
