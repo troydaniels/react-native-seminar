@@ -2,7 +2,7 @@ import React from "react";
 import { autorun } from "mobx";
 import { observer } from "mobx-react";
 import { View, SafeAreaView } from "react-native";
-import Image from "react-native-remote-svg";
+import SvgImage from "./src/components/SvgImage";
 import Header from "./src/components/Header";
 import appStore from "./src/stores/AppStore";
 import AppStyle from "./src/styles/AppStyle";
@@ -55,10 +55,7 @@ class App extends React.Component {
       <SafeAreaView style={{ flex: 1 }}>
         <Header />
         <View style={AppStyle.photoButtonContainer}>
-          <Image
-            source={{ uri: "https://cdn.svgporn.com/logos/statuspage.svg" }}
-            style={AppStyle.imageStyle}
-          />
+          <SvgImage />
         </View>
       </SafeAreaView>
     );

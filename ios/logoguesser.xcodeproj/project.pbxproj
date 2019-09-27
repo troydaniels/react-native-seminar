@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* logoguesserTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* logoguesserTests.m */; };
 		01CBDFE28A655A775532BC75 /* libPods-logoguesser-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 737796294EF453CB5FB97E17 /* libPods-logoguesser-tvOSTests.a */; };
