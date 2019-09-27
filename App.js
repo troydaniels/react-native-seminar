@@ -13,8 +13,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      uri: undefined,
-      options: []
+      uri: undefined
     };
   }
 
@@ -24,8 +23,8 @@ class App extends React.Component {
     this.disposer = autorun(() => {
       const { question } = appStore;
       if (question) {
-        const { uri, options } = question;
-        this.setState({ uri, options });
+        const { uri } = question;
+        this.setState({ uri });
       }
     });
   }
@@ -33,6 +32,10 @@ class App extends React.Component {
   componentWillUnmount() {
     this.disposer && this.disposer();
   }
+
+  verifyAnswer = selection => {
+    appStore.verifyAnswer(selection);
+  };
 
   render() {
     const { uri } = this.state;
@@ -48,7 +51,7 @@ class App extends React.Component {
                 width={400}
                 style={AppStyle.imageStyle}
               />
-              <Options />
+              <Options verifyAnswer={this.verifyAnswer} />
             </>
           )}
         </View>
