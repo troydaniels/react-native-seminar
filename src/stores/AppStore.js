@@ -7,22 +7,38 @@ class AppStore {
 
   @observable lives = 3;
 
-  @observable imageURL = "https://picsum.photos/id/237/200/300";
+  @observable question = undefined;
 
   @action
-  resetStore = _ => {
+  resetStore = () => {
     this.score = 0;
     this.lives = 0;
+    this.question = undefined;
   };
 
   @action
-  decrementLives = _ => {
+  decrementLives = () => {
     this.lives -= 1;
   };
 
   @action
-  incrementScore = _ => {
+  incrementScore = () => {
     this.score += 1;
+  };
+
+  @action
+  getNewQuestion = () => {
+    fetch("http://localhost:8080/get_question", {
+      method: "GET"
+    })
+      .then(response => response.json())
+      .then(response => this.setQuestion(response));
+  };
+
+  @action
+  setQuestion = question => {
+    console.log("question", question);
+    this.question = question;
   };
 }
 
